@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<h1 style="color:green;"><big> MENU </big></h1>
+<br>
+<h2 style="color:red;"> 1-CZERWONY </h2>
+<h2 style="color:blue;"> 2-NIEBIESKI</h2>
+
+<input type="button" name="kaminski" value="Oblicz" onclick="fun_kam()" /> 
+  <script> 
+    function fun_kam() { 
+      var x_kam = prompt("Podaj kolor", ""); 
+        if(x_kam == 1 || x_kam.toLowerCase() == "czerwony") { 
+  document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br />'); } 
+        else if(x_kam == 2 || x_kam.toLowerCase() == "niebieski") { 
+  document.write('<h6 style="color:blue;">wczytałeś kolor niebieski</h6><br />'); 
+  } 
+  } 
+ </script> 
+
+</body>
+</html>

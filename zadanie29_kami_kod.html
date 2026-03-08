@@ -1,0 +1,87 @@
+<!DOCTYPE html>   
+    <head>       
+          <meta charset="utf-8">   
+     </head>  
+ <body>
+ <textarea name="Zadanie 11" cols="80" rows="30" readonly>
+
+<html> 
+<head>
+</head> 
+<body>
+<p>
+<b>1.Właściwość danego obiektu można określić (wpisać daną do pola 
+odpowiedzialnego za właściwość)</b><br>
+Sposób 1 <br>
+Używając zapisu postaci: <br> 
+a) nazwa_obiektu.nazwa_właściwości="tekst";  dla właściwości typu tekstowego <br>
+np.  auto.marka="Opel Omega"; <br>
+b) nazwa_obiektu.nazwa_właściwości=liczba;  dla właściwości typu liczbowego <br>
+np.  auto.rok=1996;  auto.cena=25000;<br><br> 
+ 
+Sposób 2 <br>
+używając zapisu postaci:  <br>
+nazwa_obiektu[nazwa_właściwości];  <br>
+np. auto[cena]=25000;<br><br>
+
+<b>2.Odwołanie do pól (właściwości) i metod. </b><br>
+Do  właściwości  i  metod  można  się  odwołać  podobnie  jak  do  zwykłych  zmiennych   
+i funkcji, trzeba tylko przed ich nazwą umieścić nazwę obiektu, którego są elementami  
+(np. zmienną, która przechowuje dany obiekt), i kropkę. <br>
+np.   console.log(samochod1.kolor); >> wyświetla kolor obiektu samochod<br><br><br>
+
+<b>3.Cechy charakterystyczne konstruktora:</b><br>
+ jest wywoływany (uruchamiany) automatycznie w chwili tworzenia obiektu danej klasy - na 
+rzecz tego obiektu, <br>
+ nazywa się tak samo jak klasa, <br>
+ nie zwraca żadnej wartości , <br>
+ może przyjmować argumenty - tak jak zwykła funkcja czy metoda, aby następnie powołać do 
+życia obiekt za pomocą operatora new.<br><br>
+
+<b>4.Konstruowanie obiektówobiekt ma trzy pola oraz jedną metodę.</b><br>
+ <i>
+var osoba_1 = <br>
+{ <br>
+nazwisko : ‘Kowalski’, <br>
+imie  :’Jan’, <br>
+zawod  :’piekarz’, <br>
+wyświetl :function  () <br>
+ { <br>
+  Document.write(this.nazwisko + ‘  ‘  +  this.imie)<br> 
+ } <br>
+}  </i><br><br>
+<b>5.</b><br>
+Uwaga1: Słowo kluczowe this  pozwala odwołać się do pola lub metody obiektu z wnętrza tego obiektu. 
+<br>Uwaga2: Metody i pola muszą być odzielne przecinkami w obrębie jednego obiektu.<br><br><br>
+
+<b>6.Tworzenie konstruktora. </b><br> 
+Zostanie utworzony konstruktor o nazwie klient z właściwościami nazwisko, imie, zawod oraz 
+metodą wypisz(). Właściwościom obiektu zostały przypisane wartości parametrów. Użyte słowo 
+kluczowe this odnosi się do aktualnego obiektu i pozwala na przypisanie wartości parametru do 
+odpowiedniego pola tego obiektu. <br>
+ 
+<i>function klient(nazwisko_k,imie_k,zawod_k) <br>
+{ <br>
+ this.nazwisko=nazwisko_k; <br>
+ this.imie=imie_k; <br>
+ this.zawod=zawod_k; <br>
+  <br>
+wypisz = function () <br>
+  { <br>
+    alert(this.nazwisko + ' ' + this.imie) <br>
+  } <br>
+} </i><br><br>
+
+
+<b>7.Słowo kluczowe new</b><br>
+Do utworzenia nowego obiektu na podstawie konstruktora stosowane jest słowo kluczowe new. <br>
+ 
+Przykład <br>
+<i>var osoba1 = new klient('Kowalski', 'Jan', 'kierowca'); <br>
+var osoba2 = new klient('Nowak', 'Anna', 'sekretarka'); </i><br>
+ 
+Powstały dwa nowe obiekty osoba1 i osoba2 należące do klasy klient. <br><br>
+</p>
+</body>
+</html>
+</textarea>

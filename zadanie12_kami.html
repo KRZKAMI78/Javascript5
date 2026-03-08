@@ -1,0 +1,26 @@
+<!DOCTYPE html>   
+    <head>       
+          <meta charset="utf-8">   
+     </head>  
+ <body> 
+ <div style="color:blue;font-size:50px;"> 
+<script language="JavaScript"> 
+  var d1=prompt("Data1=",""); 
+  var g1=prompt("Godzina1=",""); 
+  var d2=prompt("Data2=",""); 
+  var g2=prompt("Godzina2=",""); 
+  var sekg; 
+  var sekd;
+  var sek;
+  var a=parseFloat(d1); 
+  var b=parseFloat(d2); 
+  var c=parseFloat(g1); 
+  var d=parseFloat(g2);
+    sekd=(b-a)*24*60*60;
+    sekg=(d-c)*60*60;
+    sek= sekg+sekd; 
+    document.write("Ilość sekund między dniami "+a+", godzina "+a+" i "+b+", godzina "+a+" = "+sek+"<br>"); 
+</script> 
+ </div>  
+ </body> 
+</html> 

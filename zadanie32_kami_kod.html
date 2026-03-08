@@ -1,0 +1,34 @@
+<!DOCTYPE html>   
+    <head>       
+          <meta charset="utf-8">   
+     </head>  
+ <body>
+ <textarea name="Zadanie 11" cols="80" rows="30" readonly> 
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+              function komputer(marka_k,procesor_k,motherboard_k)//początek konstruktora 
+  { 
+   this.marka=marka_k; 
+   this.procesor=procesor_k; 
+   this.motherboard=motherboard_k;   
+  }//koniec konstruktora 
+              komputer.prototype.wypisz = function () //definicja metody 
+      { 
+         alert(this.marka + ' ' + this.procesor+ ' ' + this.motherboard); 
+      }; 
+  var komp1 = new komputer("HP", "Intel", "ATX"); // nowy obiekt osoba1 
+  var komp2 = new komputer('HP', 'AMD', 'BTX'); 
+  komp1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1 
+  komp2.wypisz(); 
+                document.write("dostęp do właściwości"+"<br>"); 
+// poniżej dostęp do pól osoby1 
+     document.write("komputer pierwszy"+"   "+komp1.marka+"   "+komp1.procesor+"   "+komp1.motherboard); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+   programowanie obiektowe   
+</body> 
+</html>
+</textarea>
